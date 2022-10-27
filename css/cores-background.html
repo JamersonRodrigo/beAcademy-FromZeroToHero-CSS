@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgound and Color</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        /*height: 100vh;
+        background: ;red, blue; #ff0f10(Hexadécimal); rgb(255,90,20) rgba(205,14,189,0.815);hsla(128,90%, 50%,0.5 )*/
+    }
+
+    .bg-box{
+        width: 600px;
+        height: 400px;
+        /*background: #ff12ff;*/
+        /*shorthand*/
+        border: 8px #000 dotted;
+        padding: 16px;
+
+        /*Imagem de fundo*/
+        background-image: url(https://source.unsplash.com/random);
+        background-size: 20%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-origin: content-box;
+        /*background-attachment: fixed;
+        background: linear-gradient (rgba(0,90,0,1), rgba(0,90,0,0.51));
+        background:radial-gradient(rgba(0,90,0,1), rgba(0,90,0,0.51));*/
+
+        /* SUPER COMBO -Shorthand*/
+        background:linear-gradient(rgba(0,90,0,1), rgba(0,90,0,0.1)), url(https://source.unsplash.com/random), no-repeat center center / 50% content-box;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="bg-box"></div>
+        <h1>Testanto Backgound</h1>
+    </div>
+</body>
+</html>

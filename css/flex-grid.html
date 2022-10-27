@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox / Grid Layout</title>
+</head>
+    <style>
+
+        .body{
+            margin: 0;
+            padding: 0;
+            background: black;
+            height: 100vh;
+            display: flex;
+            align-items: center;/* flex-end(parte inferior), flex-start(parte superior),*/
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            height: auto;
+            /*background: yellow;*/
+            /*justify-content: center;irá alinhar ao centro*/
+             /*justify-content: space-between;irá direcionar as extremidades e ao meio*/
+             /*justify-content: sapce-around;irá calcular metade do tamanho de cada box e colocar como espaçamento entre eles*/
+             /*justify-content: space-evenly;irá aplicar o mesmo tamanho de cada box e colocar como espaçamento entre eles*/
+             /*justify-content: flex-end;irá direcionar a direita*/
+             /*justify-content: flex-start;irá direcionar a esquerda*/
+             /*justify-content: row-reverse; ele inverte*/
+             /*justify-content: colunn;irá posicionar em colunas*/
+             /*justify-content: colunn-reverse; ele inverte*/
+             justify-content: center;
+             gap: 12px;
+            
+        }
+   
+        .box{
+            width: 100px;
+            height: 100px;
+            /*display: inline-block;*/
+            display: block;
+            
+        }
+        .box-1{
+
+            background: red;
+            
+        }
+        .box-2{
+
+            background: green;
+    
+        }
+        .box-3{
+
+            background: blue;
+        
+        }
+    </style>
+
+<body>
+    <div class="container">
+    
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+    </div>
+ 
+</body>
+</html>

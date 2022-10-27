@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            height: 100vh;
+            grid-template-areas: "header header" "main aside" "footer footer";
+            grid-template-rows: 64px 1fr 64px;
+            grid-template-columns: 1fr 128px;
+        }
+
+        header, footer, aside, main{
+            font-size: 24px;
+        }
+        header{
+            background-color: red;
+            grid-area: header;
+        }
+        main{
+            background-color: blue;
+            grid-area: main;
+        }
+        aside{
+            background-color: green;
+            grid-area: aside;
+        }
+        footer{
+            background-color: yellow;
+            grid-area: footer;
+        }
+    </style>
+    
+<body>
+    <!--
+        Grid Layout
+        O CSS Grid Layout Module oferece um sistema de layout baseado em grid, com linhas e colunas, facilitando o design de páginas web sem a necessidade de usar floats e posicionamento.
+        Principais declarações:
+        display: grid;
+        grid-template-area - decide a quantidade de areas ofertadas(linha e coluna)
+         grid-template-rows - decide o tamanho das linhas(fixas ou flexíveis)
+         grid-template-cols - decide o tamanho das colunas(fixas ou flexíveis)
+         grid-area - marca qual elemento irá ser demarcado para o grid
+    -->
+
+    
+    <header>Topo</header>
+    <main> 
+        Conteúdo 
+    </main>
+    <aside>
+        Barra Lateral
+    </aside>
+    <footer>Rodapé</footer>
+</body>
+</html>
+
